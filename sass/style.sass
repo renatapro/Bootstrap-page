@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i|Raleway:200,400,600,700,900');
+$color1: white
+$color2: #e84545
+
+.bg
+	background: rgba(0, 0, 60, .8)
+	height: 80vh
+	min-height: 750px
+
+nav
+	a 
+		text-transform: uppercase
+		font-weight: 700
+
+.navbar 
+	padding: 30px 0
+	border: none
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+	background: transparent
+	max-width: 1170px
+	margin: 0 auto
+
+.nav_small
+	padding: 10px 0
+	background: rgb(0, 0, 60)
+
+.navbar-nav 
+	font-size: 0.9em
+	float: right
+	li 
+		margin-left: 10px
+
+#nav.small
+	padding: 11px 0
+	background: rgb(0, 0, 60)
+	max-width: 100%
+	font-size: 14px
+
+.navbar-inverse .navbar-nav>li>a 
+	color: rgba(255, 255, 255, .7)
+
+.navbar-inverse .navbar-nav>li>a:hover 
+	transition: .3s
+
+.navbar-brand 
+	font-size: 2.2em
+
+.first-letter-brand 
+	color: rgba(250, 250, 250, .4)
+	font-weight: 900
+
+.last-letter-brand 
+	color: $color1
+	font-weight: 200
+
+.jumbotron 
+	padding-top: 22%
+	background: rgba(0, 0, 0, .0)
+	color: $color1
+	h1 
+		font-weight: 700
+		font-size: 65px
+	p 
+		font-size: 22px
+		margin-bottom: 80px
+		margin-left: 20px
+		margin-right: 20px
+
+.btn-default 
+	padding: 13px 35px
+	text-transform: uppercase
+	border-radius: 2px
+	font-weight: 600
+	background: $color2
+	border-color: $color2
+	color: $color1
+	transition: .3s
+	&:hover 
+		color: $color1
+		background: red
+		border-color: red
+	
+
+#features
+	.fa
+		font-size: 60px
+		color: #e94949 
+
+.features-content 
+	margin-top: 30px
+	margin-bottom: 50px
+	padding: 0 15px
+	h5 
+		font-weight: bold
+	p 
+		line-height: 22px
+		color: #6c7279
+
+#gallery .img-responsive 
+	width: 100%
+	height: 350px
+
+.gallery-col 
+	border: 0.5px solid white
+	position: relative
+	overflow: hidden
+	padding-left: 0
+	padding-right: 0
+	img 
+		width: 650px
+		height: 350px
+		overflow: hidden
+		transition: transform 1s
+		&:last-of-child 
+			padding-right: 0
+	&:hover img
+		transform: scale(1.4)
+		transition: transform 1s
+
+.overlay 
+	transition: .5s
+	background: rgba(232, 69, 69, 0.9)
+	opacity: 0
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	&:hover 
+		opacity: 1
+
+.overlay-caption 
+	transition: .3s
+	color: $color1
+	width: 100%
+	position: absolute
+	text-align: center
+	top: 50%
+	transform: translateY(-50%)
+	h5 
+		text-transform: uppercase
+		font-weight: bold
+
+section
+	margin-top: 50px
+
+.team-description 
+	margin-top: 20px
+	h4 
+		font-size: 22px
+		margin: 10px 0
+	h5 
+		margin-bottom: 20px
+		margin-top: 10px
+		color: $color2
+	p 
+		font-size: 14px
+		color: #6c7279
+
+[class*=photo] 
+	background-size: cover
+	background-position: center
+	height: 263px
+	width: 263px
+
+.social-media 
+	margin-top: 30px
+	margin-bottom: 50px
+	.fa 
+		width: 40px
+		height: 40px
+		color: silver
+		border: 1px solid silver
+		border-radius: 2px
+		padding: 10px
+		font-size: 18px
+		transition: .3s
+		&:hover
+			color: $color1
+			background: $color2
+			border: 1px solid $color2
+
+.item 
+	display: inline-block
+
+[class*=slide] 
+	min-height: 397px
+	background-position: center
+	background-size: cover
+
+.slide-0 
+	background-image: url("https://images.pexels.com/photos/354951/pexels-photo-354951.jpeg?h=350&auto=compress&cs=tinysrgb")
+
+.slide-1 
+	background-image: url("https://images.pexels.com/photos/247917/pexels-photo-247917.jpeg?h=350&auto=compress&cs=tinysrgb")
+
+.slide-2 
+	background-image: url("https://images.pexels.com/photos/185847/pexels-photo-185847.jpeg?h=350&auto=compress&cs=tinysrgb")
+
+.slide-3 
+	background-image: url("https://images.pexels.com/photos/301284/pexels-photo-301284.jpeg?h=350&auto=compress&cs=tinysrgb")
+
+.slide-4 
+	background-image: url("https://images.pexels.com/photos/25759/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb")
+
+.slide-description 
+	font-family: 'Open Sans', sans-serif
+	font-size: 32px
+	padding: 100px 120px 0 120px
+	color: $color1
+	background: #53354a
+
+.pp 
+	padding-right: 0
+	padding-left: 0
+
+.carousel-indicators 
+	left: 85%
+	bottom: 8%
+	width: 40%
+
+#download 
+	color: #2d3033
+	text-align: center
+	p 
+		font-size: 14px
+		text-transform: uppercase
+
+.btn-download 
+	margin-top: 30px
+
+#contact 
+	background: #3a3e64
+	color: $color1
+	text-align: center
+	padding-bottom: 80px
+	padding-top: 50px
+	h5 
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 20px
+	p 
+		color: rgba(255, 255, 255, .6)
+		line-height: 22px
+	.fa 
+		font-size: 18px
+		color: $color1
+		background: transparent
+		width: 40px
+		height: 40px
+		border: 2px solid white
+		padding: 10px
+		margin-right: 5px
+		margin-bottom: 15px
+		transition: .3s
+		&:hover
+			border-color: $color2
+			background: $color2
+
+footer 
+	background: #313454
+	color: rgba(255, 255, 255, .6)
+	padding: 20px 0
+	text-align: center
+
+
+@media screen and (max-width:1200px) 
+
+	[class*=photo] 
+		margin: 0 auto
+	
+	.social-media,
+	.team-description 
+		text-align: center
+
+	[class*=slide] 
+		min-height: 400px
+
+	.slide-description 
+		font-size: 20px
+		
+	.carousel-indicators 
+		left: 85%
+		bottom: 30px
+	
+@media screen and (min-width: 768px) and (max-width: 991px) 
+
+	.bg
+		height: 60vh
+		min-height: 650px
+
+	.navbar-header
+		float: none
+		text-align: center
+		line-height: 3em
+
+	.navbar-brand
+		float: none
+
+	.collapse-custom
+		padding-left: 20px
+		padding-right: 20px
+
+	.navbar-nav
+		li 
+			margin-left: 16px
+			margin-right: 16px
+	
+	.jumbotron 
+		h1 
+			font-size: 38px
+
+	#team
+		img
+			text-align: center
+
+	
+	.slide-description 
+		font-size: 24px
+		padding: 50px 60px 0 60px
+
+
+@media screen and (max-width: 767px) 
+	
+	
+	.navbar .collapse-custom 
+		font-size: 30px
+		text-align: center
+		background: rgba(0, 0, 60, .9)
+	
+	
+	.navbar-nav 
+		width: 100%
+		background: rgba(0, 0, 60, .9)
+		
+	.navbar-inverse 
+		.navbar-toggle 
+			border-color: $color2
+			background: $color2
+			width: 44px
+			height: 44px
+			border-radius: 50%
+		
+	.navbar-inverse .navbar-toggle:hover,
+	.navbar-inverse .navbar-toggle:focus 
+		border-color: red
+		background: red
+		
+	
+	.jumbotron 
+		h1 
+			font-size: 32px
+
+	[class*=slide] 
+		min-height: 200px
+
+	.slide-description 
+		font-size: 20px
+		padding: 20px 20px 0 20px
+		
+	.carousel-indicators 
+		left: 60%
+		bottom: 30px
+
+	#contact 
+		padding-bottom: 30px
+		padding-top: 10px
+		h5 
+			margin-top: 30px
